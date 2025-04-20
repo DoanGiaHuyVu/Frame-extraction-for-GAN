@@ -439,7 +439,7 @@ def process_video(video_path, output_base_dir, crop_dim=(640, 640), final_dim=(2
 
 if __name__ == "__main__":
     df = pd.read_csv('2024-mlb-homeruns.csv')
-    limit =
+    limit = 5500
 
     for i, video_path in enumerate(df['video'].head(limit), start=1):
         print(f"Processing video {i}/{limit}: {video_path}")
